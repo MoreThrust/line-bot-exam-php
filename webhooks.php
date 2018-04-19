@@ -26,11 +26,13 @@ if (!is_null($events['events'])) {
 				'label' => 'https://example.com/',
 				'linkUri' => 'https://example.com/',
 				'area' => array(  
-					'x' => 0,
-					'y' => 0,
-					'width' => 520,
-					'height' => 1040
-				)
+						array(
+							'x' => 0,
+							'y' => 0,
+							'width' => 520,
+							'height' => 1040
+							)
+						)
 				
 			];
 
