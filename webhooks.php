@@ -23,7 +23,6 @@ if (!is_null($events['events'])) {
 					'type' => 'text',
 					'text' => 'ok'
 				];
-				
 			}
 /*
 			if($event['message']['text'] == 'แอร์'){
