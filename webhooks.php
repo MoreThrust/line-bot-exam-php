@@ -26,8 +26,18 @@ if (!is_null($events['events'])) {
 					"latitude" => 35.65910807942215,
 					"longitude" => 139.70372892916203
 				];
+			}
 
-			
+			if($event['message']['text'] == 'แอร์'){
+				$replyToken = $event['replyToken'];
+				
+				$messages = [
+					"type" => "location",
+					"title" => "MoreThrust LAB",
+					"address" => "198 ม.6 บ.เดื่อ อ.เมือง จ.อุดรธานี 41000",
+					"latitude" => 17.423152,
+					"longitude" => 102.800753
+				];
 			}
 
 		// Make a POST Request to Messaging API to reply to sender
