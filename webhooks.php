@@ -21,8 +21,8 @@ if (!is_null($events['events'])) {
 				
 				$messages = [
 					'type' => 'image',
-					'originalContentUrl' => 'https://scontent.fbkk1-2.fna.fbcdn.net/v/t1.0-1/c0.1.100.100/p100x100/29343246_450150078777035_7169313599809126400_n.jpg?_nc_cat=0&oh=f9baa54cfe0e04cb0ba0c6bf580e6e80&oe=5B6616B3',
-					'previewImageUrl' => 'https://scontent.fbkk1-2.fna.fbcdn.net/v/t1.0-1/c0.1.100.100/p100x100/29343246_450150078777035_7169313599809126400_n.jpg?_nc_cat=0&oh=f9baa54cfe0e04cb0ba0c6bf580e6e80&oe=5B6616B3'
+					'originalContentUrl' => 'https://www.unzeen.com/wp-content/themes/mezzov2/images/mygif.gif',
+					'previewImageUrl' => 'https://www.unzeen.com/wp-content/themes/mezzov2/images/mygif.gif'
 				];
 			}
 /*
@@ -61,7 +61,8 @@ if (!is_null($events['events'])) {
     					"text" => "Continue? ok"
   					)
 				];
-			}*/
+			}
+			*/
   }
 
 		// Make a POST Request to Messaging API to reply to sender
