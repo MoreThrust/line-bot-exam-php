@@ -43,20 +43,22 @@ if (!is_null($events['events'])) {
 				
 				$messages = [
 					"type" => "template",
+					"altText" => "this is a confirm template",
 					"template" => array(
 						"type" => "confirm",
-						"text" => "Are you sure?",
 						"actions" => array(
-							"type" => "message",
-							"label" => "Yes",
-							"text" => "yes",
-						,
-							"type" => "message",
-							"label" => "No",
-							"text" => "no",
+							array(
+								"type" => "message",
+								"label" => "Yes",
+								"text" => "yes",
+							),array(
+								"type" => "message",
+								"label" => "No",
+								"text" => "no",
 							)
-					)
+						)
 					"text" => "MT"
+					)
 				];
 			}
 
