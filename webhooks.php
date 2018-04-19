@@ -50,14 +50,14 @@ if (!is_null($events['events'])) {
 							array(
 								"type" => "message",
 								"label" => "Yes",
-								"text" => "yes",
+								"text" => "yes"
 							),array(
 								"type" => "message",
 								"label" => "No",
-								"text" => "no",
+								"text" => "no"
 							)
 						)
-					"text" => "MT"
+					"text" => "Continue?"
 					)
 				];
 			}
