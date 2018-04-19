@@ -20,24 +20,8 @@ if (!is_null($events['events'])) {
 				$replyToken = $event['replyToken'];
 				
 				$messages = [
-					"type" => "template",
-					"altText" => "this is a confirm template",
-					"template" => array(
-						"type" => "confirm",
-						"actions" => array(
-							array(
-					        "type" => "message",
-					        "label" => "Yes",
-					        "text": "Yes"
-						    ),
-						    array(
-						    "type" => "message",
-						    "label" => "No",
-						    "text" => "No"
-						    )
-    					),
-    				"text" => "Continue?"
-  					)
+					"type" => "text",
+					"text" => "this is a confirm template"
 				];
 
 			}
