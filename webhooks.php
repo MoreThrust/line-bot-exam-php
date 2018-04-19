@@ -31,8 +31,8 @@ if (!is_null($events['events'])) {
 							'y' => 0,
 							'width' => 520,
 							'height' => 1040
-							)
-						)
+							);
+						);
 				
 			];
 
