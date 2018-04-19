@@ -24,45 +24,8 @@ if (!is_null($events['events'])) {
 					'text' => 'ok'
 				];
 			}
-/*
-			if($event['message']['text'] == 'แอร์'){
-				$replyToken = $event['replyToken'];
-				
-				$messages = [
-					"type" => "location",
-					"title" => "MoreThrust LAB",
-					"address" => "198 ม.6 บ.เดื่อ อ.เมือง จ.อุดรธานี 41000",
-					"latitude" => 17.423152,
-					"longitude" => 102.800753
-				];
-			}
 
-			if($event['message']['text'] == 'สถานะ'){
-				$replyToken = $event['replyToken'];
-				
-				$messages = [
-					"type" => "template",
-  					"altText" => "this is a confirm template",
-  					"template" => array(
-    					"type" => "confirm",
-    					"actions" => array(
-      						array(
-        						"type" => "message",
-        						"label" => "Yes",
-        						"text" => "Yes"
-      						),
-      						array(
-        						"type" => "message",
-        						"label" => "No",
-        						"text" => "No"
-      						)
-    					),
-    					"text" => "Continue? ok"
-  					)
-				];
-			}
-			*/
-  }
+  		
 
 		// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
