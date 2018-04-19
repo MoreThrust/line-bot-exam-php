@@ -38,6 +38,29 @@ if (!is_null($events['events'])) {
 				];
 			}
 
+			if($event['message']['text'] == 'สถานะ'){
+				$replyToken = $event['replyToken'];
+				
+				$messages = [
+					"type" => "template",
+					"template" => array(
+						"type" => "confirm",
+						"text" => "Are you sure?",
+						"actions" => array(
+							"type" => "message",
+							"label" => "Yes",
+							"text" => "yes",
+						),array(
+							"type" => "message",
+							"label" => "No",
+							"text" => "no",
+							)
+					)
+					"text" => "MT"
+				];
+			}
+  }
+
 		// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
