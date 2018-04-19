@@ -37,53 +37,31 @@ if (!is_null($events['events'])) {
 					"longitude" => 102.800753
 				];
 			}
-
+/*
 			if($event['message']['text'] == 'สถานะ'){
 				$replyToken = $event['replyToken'];
 				
 				$messages = [
 					"type" => "template",
-					"altText" => "this is a confirm template",
-					"template" => array(
-						"type" => "confirm",
-						"actions" => array(
-							array(
-								"type" => "message",
-								"label" => "Yes",
-								"text" => "yes"
-							),array(
-								"type" => "message",
-								"label" => "No",
-								"text" => "no"
-							)
-						)
-					"text" => "Continue?"
-					)
+  					"altText" => "this is a confirm template",
+  					"template" => array(
+    					"type" => "confirm",
+    					"actions" => array(
+      						array(
+        						"type" => "message",
+        						"label" => "Yes",
+        						"text" => "Yes"
+      						),
+      						array(
+        						"type" => "message",
+        						"label" => "No",
+        						"text" => "No"
+      						)
+    					),
+    					"text" => "Continue?"
+  					)
 				];
-			}
-
-			/*
-			{
-  "type": "template",
-  "altText": "this is a confirm template",
-  "template": {
-    "type": "confirm",
-    "actions": [
-      {
-        "type": "message",
-        "label": "Yes",
-        "text": "Yes"
-      },
-      {
-        "type": "message",
-        "label": "No",
-        "text": "No"
-      }
-    ],
-    "text": "Continue?"
-  }
-}
-			*/
+			}*/
   }
 
 		// Make a POST Request to Messaging API to reply to sender
