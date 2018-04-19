@@ -20,11 +20,9 @@ if (!is_null($events['events'])) {
 				$replyToken = $event['replyToken'];
 				
 				$messages = [
-					"type" => "location",
-					"title" => "my location",
-					"address" => "〒150-0002 東京都渋谷区渋谷２丁目２１−１",
-					"latitude" => 35.65910807942215,
-					"longitude" => 139.70372892916203
+					"type" => "image",
+					"originalContentUrl" => "https://scontent.fbkk1-2.fna.fbcdn.net/v/t1.0-1/c0.1.100.100/p100x100/29343246_450150078777035_7169313599809126400_n.jpg?_nc_cat=0&oh=f9baa54cfe0e04cb0ba0c6bf580e6e80&oe=5B6616B3",
+					"previewImageUrl" => "https://scontent.fbkk1-2.fna.fbcdn.net/v/t1.0-1/c0.1.100.100/p100x100/29343246_450150078777035_7169313599809126400_n.jpg?_nc_cat=0&oh=f9baa54cfe0e04cb0ba0c6bf580e6e80&oe=5B6616B3"
 				];
 			}
 
