@@ -22,8 +22,15 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'text',
-				'text' => "ok",
+				"type" => "uri",
+				'label' => 'https://example.com/',
+				'linkUri' => 'https://example.com/',
+				'area' => array(  
+					'x' => 0,
+					'y' => 0,
+					'width' => 520,
+					'height' => 1040
+				)
 				
 			];
 
