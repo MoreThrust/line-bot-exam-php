@@ -50,7 +50,7 @@ if (!is_null($events['events'])) {
 							"type" => "message",
 							"label" => "Yes",
 							"text" => "yes",
-						),array(
+						,
 							"type" => "message",
 							"label" => "No",
 							"text" => "no",
@@ -59,6 +59,29 @@ if (!is_null($events['events'])) {
 					"text" => "MT"
 				];
 			}
+
+			/*
+			{
+  "type": "template",
+  "altText": "this is a confirm template",
+  "template": {
+    "type": "confirm",
+    "actions": [
+      {
+        "type": "message",
+        "label": "Yes",
+        "text": "Yes"
+      },
+      {
+        "type": "message",
+        "label": "No",
+        "text": "No"
+      }
+    ],
+    "text": "Continue?"
+  }
+}
+			*/
   }
 
 		// Make a POST Request to Messaging API to reply to sender
