@@ -20,9 +20,8 @@ if (!is_null($events['events'])) {
 				$replyToken = $event['replyToken'];
 				
 				$messages = [
-					'type' => 'image',
-					'originalContentUrl' => 'https://www.unzeen.com/wp-content/themes/mezzov2/images/mygif.gif',
-					'previewImageUrl' => 'https://www.unzeen.com/wp-content/themes/mezzov2/images/mygif.gif'
+					'type' => 'text',
+					'test' => 'ok'
 				];
 			}
 /*
