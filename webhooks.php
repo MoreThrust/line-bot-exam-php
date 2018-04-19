@@ -58,7 +58,7 @@ if (!is_null($events['events'])) {
         						"text" => "No"
       						)
     					),
-    					"text" => "Continue?"
+    					"text" => "Continue? ok"
   					)
 				];
 			}*/
