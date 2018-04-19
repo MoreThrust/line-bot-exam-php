@@ -22,27 +22,24 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				array(
-					'type' => 'template', // 訊息類型 (模板)
-					'altText' => 'Example confirm template', // 替代文字
-					'template' => array(
-						'type' => 'confirm', // 類型 (確認)
-						'text' => 'Are you sure?', // 文字
-						'actions' => array(
-							array(
-							'type' => 'message', // 類型 (訊息)
-							'label' => 'Yes', // 標籤 1
-							'text' => 'Yes' // 用戶發送文字 1
-							),
-							array(
-							'type' => 'message', // 類型 (訊息)
-							'label' => 'No', // 標籤 2
-							'text' => 'No' // 用戶發送文字 2
-                        				)
-                    					)
-                				)
-            			)
-				
+				"type" => "template",
+				"altText" => "this is a confirm template",
+				"template": array(
+					"type" => "confirm",
+					"text" => "Are you sure?",
+					"actions": array(
+          					array(
+						"type" => "message",
+						"label" => "Yes",
+						"text" => "yes"
+          					),
+          					array(
+						"type" => "message",
+						"label" => "No",
+						"text" => "no"
+          					)
+      					)
+				)
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
