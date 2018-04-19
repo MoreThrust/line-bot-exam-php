@@ -21,8 +21,9 @@ if (!is_null($events['events'])) {
 				
 				$messages = [
 					'type' => 'text',
-					'test' => 'ok'
+					'text' => 'ok'
 				];
+				
 			}
 /*
 			if($event['message']['text'] == 'แอร์'){
