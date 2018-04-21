@@ -21,21 +21,21 @@ if (!is_null($events['events'])) {
 				
 				$messages = [
 					"type" => "template",
-					"template" => [
+					"template" => array([
 						"type" => "confirm",
-						"actions" => [
-							[
+						"actions" => array([
+							array([
 								"type" => "message",
 								"label" => "Yes",
 								"text" => "Yes"
-							],[
+							]),array([
 								"type" => "message",
 								"label" => "No",
 								"text" => "No"
-							]
-						],
+							])
+						]),
 						"text": "Continue?"
-					]
+					])
 				];
 
 			}
