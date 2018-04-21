@@ -33,7 +33,7 @@ if (!is_null($events['events'])) {
         						"label" => "No",
         						"text" => "No"
     						]
-    					]
+    					],
     				"text" => "Continue?"
 					]
 				];
