@@ -25,13 +25,13 @@ if (!is_null($events['events'])) {
 						"type" => "confirm",
     					"actions" => [
     						[
-    							"type": "message",
-        						"label": "Yes",
-        						"text": "Yes"
+    							"type" => "message",
+        						"label" => "Yes",
+        						"text" => "Yes"
     						],[
-    							"type": "message",
-        						"label": "No",
-        						"text": "No"
+    							"type" => "message",
+        						"label" => "No",
+        						"text" => "No"
     						]
     					]
     				"text" => "Continue?"
