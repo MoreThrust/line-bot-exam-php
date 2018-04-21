@@ -20,13 +20,8 @@ if (!is_null($events['events'])) {
 				$replyToken = $event['replyToken'];
 				
 				$messages = [
-					"type" => "template",
-					"template" => [
-						"type" => "confirm",
-						"actions" => [["type" => "message","label" => "Yes","text" => "Yes"],["type" => "message","label" => "No","text" => "No"]],
-						"text": "Continue?"
-					]
-				];
+					"type" => "text",
+					"text" => "ok"
 
 			}
 		
