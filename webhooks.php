@@ -20,12 +20,43 @@ if (!is_null($events['events'])) {
 				$replyToken = $event['replyToken'];
 				
 				$messages = [
-					"type" => "text",
-					"text" => "this is a confirm template"
+					"type" => "template",
+					"template" => [
+						"type" => "confirm",
+						"actions" => [
+							"type" => "message",
+							"label" => "Yes",
+							"text" => "Yes"
+						],
+						"text": "Continue?"
+					]
 				];
 
 			}
 
+
+/*
+{
+  "type": "template",
+  "altText": "this is a confirm template",
+  "template": {
+    "type": "confirm",
+    "actions": [
+      {
+        "type": "message",
+        "label": "Yes",
+        "text": "Yes"
+      },
+      {
+        "type": "message",
+        "label": "No",
+        "text": "No"
+      }
+    ],
+    "text": "Continue?"
+  }
+}
+*/
   		
 
 		// Make a POST Request to Messaging API to reply to sender
