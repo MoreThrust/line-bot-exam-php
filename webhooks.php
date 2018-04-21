@@ -21,21 +21,13 @@ if (!is_null($events['events'])) {
 				
 				$messages = [
 					"type" => "template",
-					"template" => [
-						"type" => "confirm",
-    					"actions" => [
-    						[
-    							"type" => "message",
-        						"label" => "Yes",
-        						"text" => "Yes"
-    						],[
-    							"type" => "message",
-        						"label" => "No",
-        						"text" => "No"
-    						]
-    					],
+					"template" => ["type" => "confirm","actions" => [["type" => "message","label" => "Yes","text" => "Yes"],["type" => "message","label" => "No","text" => "No"]],
     				"text" => "Continue?"
 					]
+				];
+				$ms = [
+					"type" => "text",
+					"text" => "ok"
 				];
 
 			}
@@ -47,7 +39,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'messages' => [$messages.$ms],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
