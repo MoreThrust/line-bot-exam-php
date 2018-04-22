@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 					"type" => "template",
 					"template" => [
 						"type" => "confirm",
-						"actions" => [
+						"actions" => array(
 							array(
 								"type" => "message",
 								"label" => "Yes",
@@ -34,7 +34,7 @@ if (!is_null($events['events'])) {
 								"label" => "No",
 								"text" => "No"
 							)
-						],
+						),
     				"text" => "Continue?"
 					]
 				];
