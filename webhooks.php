@@ -23,18 +23,18 @@ if (!is_null($events['events'])) {
 					"type" => "template",
 					"template" => [
 						"type" => "confirm",
-						"actions" => array(
-							array(
+						"actions" => [
+							{
 								"type" => "message",
 								"label" => "Yes",
 								"text" => "Yes"
-							),
-							array(
+							},
+							{
 								"type" => "message",
 								"label" => "No",
 								"text" => "No"
-							)
-						),
+							}
+						],
     				"text" => "Continue?"
 					]
 				];
