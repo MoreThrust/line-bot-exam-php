@@ -9,9 +9,7 @@ $jsonObj = json_decode($jsonString);
 $message = $jsonObj->{"events"}[0]->{"message"};
 $replyToken = $jsonObj->{"events"}[0]->{"replyToken"};
 
-// 送られてきたメッセージの中身からレスポンスのタイプを選択
 if ($message->{"text"} == 'แสงสว่าง') {
-    // 確認ダイアログタイプ
     $messageData = [
         'type' => 'template',
         'altText' => '確認ダイアログ',
@@ -64,18 +62,18 @@ if ($message->{"text"} == 'แสงสว่าง') {
             'type' => 'carousel',
             'columns' => [
                 [
-                    'title' => 'カルーセル1',
-                    'text' => 'カルーセル1です',
+                    'title' => 'ประตูหน้าบ้าน',
+                    'text' => 'สถานะ: ล็อคอยู่',
                     'actions' => [
                         [
-                            'type' => 'postback',
-                            'label' => 'webhookにpost送信',
-                            'data' => 'value'
+                            'type' => 'message',
+                            'label' => 'ล็อคประตู',
+                            'text' => 'ล็อคประตู'
                         ],
                         [
-                            'type' => 'uri',
-                            'label' => '美容の口コミ広場を見る',
-                            'uri' => 'http://clinic.e-kuchikomi.info/'
+                            'type' => 'message',
+                            'label' => 'ปลดล็อคประตู',
+                            'text' => 'ปลดล็อคประตู'
                         ]
                     ]
                 ],
