@@ -78,18 +78,18 @@ if ($message->{"text"} == 'แสงสว่าง') {
                     ]
                 ],
                 [
-                    'title' => 'カルーセル2',
-                    'text' => 'カルーセル2です',
+                    'title' => 'ประตูหลังบ้าน',
+                    'text' => 'สถานะ: ไม่มีการล็อค',
                     'actions' => [
                         [
-                            'type' => 'postback',
-                            'label' => 'webhookにpost送信',
-                            'data' => 'value'
+                            'type' => 'message',
+                            'label' => 'ล็อคประตู',
+                            'text' => 'ล็อคประตู'
                         ],
                         [
-                            'type' => 'uri',
-                            'label' => '女美会を見る',
-                            'uri' => 'https://jobikai.com/'
+                            'type' => 'message',
+                            'label' => 'ปลดล็อคประตู',
+                            'text' => 'ปลดล็อคประตู'
                         ]
                     ]
                 ],
