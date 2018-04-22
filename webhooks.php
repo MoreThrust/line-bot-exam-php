@@ -28,18 +28,17 @@ if (!is_null($events['events'])) {
 								"type" => "message",
 								"label" => "Yes",
 								"text" => "Yes"
-							],[
+							],
+							[
 								"type" => "message",
 								"label" => "No",
 								"text" => "No"
-							]],
+							]
+						],
     				"text" => "Continue?"
 					]
 				];
-				$ms = [
-					"type" => "text",
-					"text" => "ok"
-				];
+				
 
 			}
 		
