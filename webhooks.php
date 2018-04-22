@@ -97,10 +97,9 @@ if ($message->{"text"} == 'แสงสว่าง') {
         ]
     ];
 } else {
-    // それ以外は送られてきたテキストをオウム返し
     $messageData = [
         'type' => 'text',
-        'text' => $message->{"text"}
+        'text' => "ผมไม่เข้าใจ"
     ];
 }
 
